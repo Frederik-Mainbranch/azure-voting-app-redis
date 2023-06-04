@@ -41,7 +41,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "acr200.azurecr.io"
+  AZURE_CONTAINER_REGISTRY: "acr200"
   CONTAINER_NAME: "voting-app"
   RESOURCE_GROUP: "rg-frederik-hartung-playground"
   CLUSTER_NAME: "myAksCluster"
