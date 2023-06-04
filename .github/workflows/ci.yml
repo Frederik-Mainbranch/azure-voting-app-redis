@@ -45,7 +45,7 @@ env:
   CONTAINER_NAME: "voting-app"
   RESOURCE_GROUP: "rg-frederik-hartung-playground"
   CLUSTER_NAME: "myAksCluster"
-  CHART_PATH: ".github/helm/azure-vote-front/Chart.yaml"
+  CHART_PATH: ".github/helm/azure-vote-front/"
   CHART_OVERRIDE_PATH: ".github/helm/azure-vote-front/myvalues.yaml"
 
 jobs:
