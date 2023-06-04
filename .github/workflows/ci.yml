@@ -45,8 +45,8 @@ env:
   CONTAINER_NAME: "voting-app"
   RESOURCE_GROUP: "rg-frederik-hartung-playground"
   CLUSTER_NAME: "myAksCluster"
-  CHART_PATH: ".github/helm/helmfile.yml"
-  CHART_OVERRIDE_PATH: ".github/helm/values-entwicklung.yml"
+  CHART_PATH: ".github/helm/azure-vote-front/Chart.yaml"
+  CHART_OVERRIDE_PATH: ".github/helm/azure-vote-front/myvalues.yaml"
 
 jobs:
   buildImage:
@@ -108,8 +108,7 @@ jobs:
           renderEngine: "helm"
           helmChart: ${{ env.CHART_PATH }}
           overrideFiles: ${{ env.CHART_OVERRIDE_PATH }}
-          overrides: |
-            replicas:2
+          overrides: 
           helm-version: "latest"
         id: bake
 
