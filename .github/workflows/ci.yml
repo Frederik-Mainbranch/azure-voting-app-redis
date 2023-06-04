@@ -62,7 +62,7 @@ jobs:
       - name: Login to Azure
         uses: Azure/login@v1
         with:
-          creds: '{"clientId":"${{ secrets.AZURE_SP_APP_ID }}","clientSecret":"${{ secrets.AZURE_SP_PASSWORD }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.AZURE_SP_TENANT_ID }}"}'
+          creds: '{"clientId":"${{ secrets.AZURE_SP_CLIENT_ID }}","clientSecret":"${{ secrets.AZURE_SP_PASSWORD }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.AZURE_SP_TENANT_ID }}"}'
 
       # Builds and pushes an image up to your Azure Container Registry
       - name: Build and push image to ACR
