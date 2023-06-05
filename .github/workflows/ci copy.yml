@@ -80,5 +80,5 @@ jobs:
           cluster-name: ${{ env.CLUSTER_NAME }}
           admin: 'false'
           use-kubelogin: 'true'
-      - run: pwd; ls;
+      - run: ls .github/helm/azure-vote-front
 
