@@ -80,5 +80,5 @@ jobs:
           cluster-name: ${{ env.CLUSTER_NAME }}
           admin: 'false'
           use-kubelogin: 'true'
-      - run: helm version; kubectl version --short
+      - run: ls azure-voting-app-redis/.github/helm/azure-vote-front
 
