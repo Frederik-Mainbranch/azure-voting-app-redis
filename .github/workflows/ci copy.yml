@@ -80,5 +80,5 @@ jobs:
           cluster-name: ${{ env.CLUSTER_NAME }}
           admin: 'false'
           use-kubelogin: 'true'
-      - run: helm upgrade --install voting-app2 .github/helm/azure-vote-front
+      - run: helm upgrade --install azure-vote-backend .github/helm/azure-vote-front
 
